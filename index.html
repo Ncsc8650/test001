@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Knowledge Assistant - Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div>
+          <h1>Knowledge Assistant</h1>
+          <p>งานการเงินและการบัญชี</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="dashboard">ภาพรวม</button>
+        <button class="nav-item" data-view="ask">ถาม AI</button>
+        <button class="nav-item" data-view="checklist">ตรวจเอกสารฎีกา</button>
+        <button class="nav-item" data-view="learning">เรียนรู้งาน ๒ เดือน</button>
+        <button class="nav-item" data-view="knowledge">คลังความรู้</button>
+      </nav>
+
+      <div class="status-box">
+        <span class="status-dot"></span>
+        <div>
+          <strong>ฐานความรู้ v0.1</strong>
+          <p>ปรับปรุงล่าสุด 16 พ.ค. 2569</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">สำนักงานการเงินหน่วยขึ้นตรงสำนักงานปลัดกระทรวงกลาโหม</p>
+          <h2 id="view-title">ภาพรวมระบบผู้ช่วยองค์ความรู้</h2>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" title="ค้นหา">⌕</button>
+          <button class="primary-button">ส่งให้ผู้เชี่ยวชาญตรวจสอบ</button>
+        </div>
+      </header>
+
+      <section id="dashboard" class="view active">
+        <div class="metric-grid">
+          <article class="metric">
+            <span>เป้าหมายหลัก</span>
+            <strong>ลดระยะเรียนรู้งาน</strong>
+            <p>ช่วยกำลังพลใหม่ในช่วง ๒ เดือนแรก</p>
+          </article>
+          <article class="metric">
+            <span>จุดเน้น</span>
+            <strong>ลดเอกสารถูกตีกลับ</strong>
+            <p>ตรวจรายการเอกสารประกอบเบื้องต้น</p>
+          </article>
+          <article class="metric">
+            <span>ขอบเขต AI</span>
+            <strong>ผู้ช่วยองค์ความรู้</strong>
+            <p>ไม่อนุมัติหรือตัดสินใจแทนเจ้าหน้าที่</p>
+          </article>
+        </div>
+
+        <div class="content-grid">
+          <section class="panel wide">
+            <div class="panel-header">
+              <h3>เส้นทางการใช้งานหลัก</h3>
+              <span>4K-AI Model</span>
+            </div>
+            <div class="flow">
+              <div>
+                <b>1</b>
+                <strong>รวบรวมองค์ความรู้</strong>
+                <p>ระเบียบ คู่มือ หนังสือเวียน และประสบการณ์จริง</p>
+              </div>
+              <div>
+                <b>2</b>
+                <strong>จัดมาตรฐาน</strong>
+                <p>แยกหมวดเบิกจ่าย บัญชี และระบบงาน</p>
+              </div>
+              <div>
+                <b>3</b>
+                <strong>เข้าถึงผ่าน AI</strong>
+                <p>ค้นคืน อธิบาย และแนะนำเอกสารเบื้องต้น</p>
+              </div>
+              <div>
+                <b>4</b>
+                <strong>ปรับปรุงต่อเนื่อง</strong>
+                <p>อัปเดตเมื่อมีระเบียบหรือหนังสือเวียนใหม่</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <h3>กองงานที่เกี่ยวข้อง</h3>
+            </div>
+            <ul class="division-list">
+              <li><strong>กวก.กง.กห.</strong><span>ระเบียบและหลักเกณฑ์</span></li>
+              <li><strong>กคจ.กง.กห.</strong><span>ตรวจสอบการเบิกจ่าย</span></li>
+              <li><strong>กบง.กง.กห.</strong><span>รับจ่ายเงินและบัญชี</span></li>
+              <li><strong>กกมง.กง.กห.</strong><span>ระบบสารสนเทศ</span></li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section id="ask" class="view">
+        <div class="ask-layout">
+          <section class="chat-panel">
+            <div class="message user">เบิกค่าใช้จ่ายรายการใหม่ ต้องตรวจอะไรบ้างก่อนส่งฎีกา?</div>
+            <div class="message ai">
+              <strong>คำตอบเบื้องต้น</strong>
+              <p>ควรตรวจสอบประเภทเงิน เอกสารอนุมัติ หลักฐานผู้รับเงิน รายการในระบบ New GFMIS Thai และความสัมพันธ์กับการบันทึกบัญชี ก่อนส่งให้ กคจ.กง.กห. ตรวจสอบ</p>
+              <ol>
+                <li>ตรวจประเภทค่าใช้จ่ายและงบประมาณ</li>
+                <li>ตรวจเอกสารประกอบฎีกาให้ครบถ้วน</li>
+                <li>ตรวจข้อมูลผู้รับเงินและจำนวนเงิน</li>
+                <li>ตรวจผลกระทบต่อบัญชีจ่ายตรงหรือบัญชีทั่วไป</li>
+              </ol>
+            </div>
+            <form class="prompt-bar">
+              <input type="text" value="บัญชีจ่ายตรงกับบัญชีทั่วไปต่างกันอย่างไร">
+              <button type="button">ถาม</button>
+            </form>
+          </section>
+          <aside class="reference-panel">
+            <h3>แหล่งอ้างอิงที่ระบบใช้</h3>
+            <div class="ref-item">
+              <strong>คู่มือการจัดทำฎีกา</strong>
+              <span>หมวดเอกสารประกอบ</span>
+            </div>
+            <div class="ref-item">
+              <strong>New GFMIS Thai</strong>
+              <span>แนวปฏิบัติระบบเบิกจ่าย</span>
+            </div>
+            <div class="ref-item">
+              <strong>กวก.กง.กห.</strong>
+              <span>ตรวจสอบระเบียบและคำชี้แจง</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="checklist" class="view">
+        <section class="panel wide">
+          <div class="panel-header">
+            <h3>ตรวจเอกสารประกอบฎีกาเบื้องต้น</h3>
+            <select>
+              <option>งบรายจ่ายอื่น</option>
+              <option>งบบุคลากร</option>
+              <option>งบกลาง</option>
+              <option>งบอุดหนุน</option>
+            </select>
+          </div>
+          <div class="checklist">
+            <label><input type="checkbox" checked> หนังสืออนุมัติหรือคำสั่งที่เกี่ยวข้อง</label>
+            <label><input type="checkbox" checked> รายละเอียดค่าใช้จ่ายและวงเงินงบประมาณ</label>
+            <label><input type="checkbox"> หลักฐานผู้รับเงินและข้อมูลการโอน</label>
+            <label><input type="checkbox"> เอกสารจากระบบ New GFMIS Thai</label>
+            <label><input type="checkbox"> ตรวจผลกระทบต่อบัญชีจ่ายตรง/บัญชีทั่วไป</label>
+          </div>
+          <div class="warning">
+            ระบบนี้เป็นการตรวจเบื้องต้น ผู้ปฏิบัติงานต้องตรวจสอบกับระเบียบและผู้มีอำนาจอีกครั้ง
+          </div>
+        </section>
+      </section>
+
+      <section id="learning" class="view">
+        <div class="timeline">
+          <article>
+            <span>เดือนที่ ๑</span>
+            <h3>พื้นฐานการปฏิบัติงาน</h3>
+            <p>ภาพรวม สกง., ขั้นตอนจัดทำฎีกา, เอกสารประกอบ, การใช้ระบบเบื้องต้น และข้อผิดพลาดที่พบบ่อย</p>
+            <progress value="68" max="100"></progress>
+          </article>
+          <article>
+            <span>เดือนที่ ๒</span>
+            <h3>กรณีซับซ้อนและการแก้ไข</h3>
+            <p>รายการเบิกจ่ายที่ไม่คุ้นเคย การแก้ไขเอกสารที่ถูกตีกลับ บัญชีจ่ายตรง/ทั่วไป และรายงานประจำเดือน</p>
+            <progress value="32" max="100"></progress>
+          </article>
+        </div>
+      </section>
+
+      <section id="knowledge" class="view">
+        <div class="knowledge-grid">
+          <article><b>ระเบียบและคำชี้แจง</b><span>กวก.กง.กห.</span></article>
+          <article><b>เอกสารประกอบฎีกา</b><span>กคจ.กง.กห.</span></article>
+          <article><b>บัญชีและรายงาน</b><span>กบง.กง.กห.</span></article>
+          <article><b>ระบบบัญชีเงินราชการ</b><span>กกมง.กง.กห.</span></article>
+          <article><b>New GFMIS Thai</b><span>ระบบกลางภาครัฐ</span></article>
+          <article><b>ข้อผิดพลาดที่พบบ่อย</b><span>บทเรียนจากงานจริง</span></article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
